@@ -55,7 +55,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-solar-green" />
-                <span>Más de 500+ kW instalados</span>
+                <span>Más de 50+ kW instalados</span>
               </div>
             </div>
           </div>
