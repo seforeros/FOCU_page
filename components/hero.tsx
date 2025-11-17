@@ -15,7 +15,7 @@ export function Hero() {
           className="object-cover brightness-100"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/20" />
         </div>
 
       {/* Content */}
