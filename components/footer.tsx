@@ -1,9 +1,11 @@
 import Link from "next/link"
-import { Instagram, Facebook, Linkedin} from "lucide-react"
+import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Footer() {
+  const whatsappLink = "https://wa.me/573114721514"
+
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Section */}
@@ -13,7 +15,10 @@ export function Footer() {
           <p className="text-gray-400 mb-8 text-pretty max-w-2xl mx-auto">
             Transforma tu forma de consumir energía y contribuye a un futuro más sostenible
           </p>
-          <Button className="bg-solar-yellow text-gray-900 hover:bg-solar-yellow/90 font-semibold">
+          <Button 
+            className="bg-solar-yellow text-gray-900 hover:bg-solar-yellow/90 font-semibold"
+            onClick={() => window.open(whatsappLink, '_blank')}
+          >
             ¡Contáctanos!
           </Button>
         </div>

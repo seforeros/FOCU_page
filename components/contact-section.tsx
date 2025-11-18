@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { MessageSquare } from "lucide-react"
+import { MessageSquare } from 'lucide-react'
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -24,6 +24,8 @@ export function ContactSection() {
     // TODO: Implement form submission logic
     console.log("Form submitted:", formData)
   }
+
+  const whatsappLink = "https://wa.me/573114721514"
 
   return (
     <section id="contacto" className="py-24 bg-white">
@@ -117,6 +119,7 @@ export function ContactSection() {
               type="button"
               variant="outline"
               className="flex-1 border-solar-green text-solar-green hover:bg-solar-green/10 bg-transparent"
+              onClick={() => window.open(whatsappLink, '_blank')}
             >
               <MessageSquare className="h-4 w-4 mr-2" />
               Escribir por WhatsApp
