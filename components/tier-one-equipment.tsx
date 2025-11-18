@@ -20,6 +20,33 @@ const equipment = [
   },
 ]
 
+const brandLogos = [
+  {
+    name: "Deye",
+    url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/deye_LOGO-0keSfsLsCNKnuvNhX6Nwi59Ypagfz5.png"
+  },
+  {
+    name: "MUST",
+    url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/must_logo-Bor9e7iYeJaIKHTqn5iSMQiTPIzuO4.png"
+  },
+  {
+    name: "JA Solar",
+    url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/JA_Solar_Logo-K87QdNf9p5tljGKo1piDsVYLr33Eol.png"
+  },
+  {
+    name: "Growatt",
+    url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Growatt-logo-ABpp3Hotbma7maSPSG45Wy65pgu5z5.png"
+  },
+  {
+    name: "Hoymiles",
+    url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hoymiles_logo-KLYA1OuPW1sk5pRxJVLp2men82k2DA.png"
+  },
+  {
+    name: "JinKo Solar",
+    url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Jinko_Solar_logo-Rky243T27UFNDdDDXI1W8447dNElfN.png"
+  }
+]
+
 export function TierOneEquipment() {
   return (
     <section id="equipos" className="py-24 bg-gray-50">
@@ -47,14 +74,16 @@ export function TierOneEquipment() {
           </div>
         </div>
 
-        {/* Equipment logos placeholder */}
         <div className="mt-16 text-center">
           <p className="text-sm text-gray-500 mb-8">Trabajamos con las mejores marcas</p>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center opacity-50">
-            {/* TODO: Replace with actual equipment brand logos */}
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="h-12 bg-gray-200 rounded flex items-center justify-center">
-                <span className="text-gray-400 font-medium">Logo {i}</span>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+            {brandLogos.map((brand) => (
+              <div key={brand.name} className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300">
+                <img 
+                  src={brand.url || "/placeholder.svg"} 
+                  alt={`${brand.name} logo`}
+                  className="max-h-12 w-auto object-contain"
+                />
               </div>
             ))}
           </div>
