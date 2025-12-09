@@ -13,21 +13,8 @@ export const metadata: Metadata = {
     "Diseñamos, instalamos y financiamos proyectos solares residenciales, comerciales e industriales en toda Colombia. Ahorra en tu factura de energía con sistemas solares a la medida.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.svg",
+    apple: "/images/logo-focu-2-20-281-29.png",
   },
 }
 
