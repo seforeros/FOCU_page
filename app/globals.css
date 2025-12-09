@@ -139,3 +139,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Adding infinite scroll animation for brand logos */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  /* Adding scrollbar-hide utility for manual scrolling */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
