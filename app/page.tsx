@@ -16,8 +16,8 @@ export default function Home() {
       <WhySol />
       <HowItWorks />
       <Benefits />
-      <FAQ />
       <Installers />
+      <FAQ />
       <Footer />
       <WhatsAppButton />
     </main>
