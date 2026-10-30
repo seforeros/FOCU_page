@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { FileText, Lightbulb, Users, Sun } from 'lucide-react'
@@ -28,19 +27,6 @@ const steps = [
     description:
       "Te ayudamos con la financiación y te acompañamos en la instalación y los trámites con el operador de red.",
     icon: Sun,
-  },
-]
-
-const mockups = [
-  {
-    src: "/images/mockups/diseno-preliminar.jpg",
-    alt: "Ejemplo de diseño preliminar de un sistema solar",
-    caption: "Paso 2 · Tu diseño preliminar",
-  },
-  {
-    src: "/images/mockups/ofertas-instaladores.jpg",
-    alt: "Ejemplo de proyectos recibiendo ofertas de instaladores",
-    caption: "Paso 3 · Ofertas de instaladores",
   },
 ]
 
@@ -74,27 +60,6 @@ export function HowItWorks() {
               )
             })}
           </div>
-        </div>
-
-        {/* Mockups */}
-        <div className="mb-12">
-          <div className="grid gap-6 md:grid-cols-2">
-            {mockups.map((mockup) => (
-              <figure key={mockup.src}>
-                <Image
-                  src={mockup.src}
-                  alt={mockup.alt}
-                  width={1600}
-                  height={800}
-                  className="rounded-2xl border border-gray-200 shadow-sm w-full h-auto"
-                />
-                <figcaption className="text-sm text-gray-600 mt-3">
-                  <strong className="text-gray-900">{mockup.caption}</strong>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-          <p className="text-xs text-gray-500 text-center mt-6">Imágenes ilustrativas de la plataforma.</p>
         </div>
 
         <div className="bg-white rounded-2xl p-8 border border-gray-200">
