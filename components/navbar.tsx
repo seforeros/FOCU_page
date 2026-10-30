@@ -48,11 +48,11 @@ export function Navbar() {
             <Link href="#beneficios" className="text-sm font-medium text-gray-700 hover:text-gray-900">
               Beneficios
             </Link>
-            <Link href="#preguntas" className="text-sm font-medium text-gray-700 hover:text-gray-900">
-              Preguntas
-            </Link>
             <Link href="#instaladores" className="text-sm font-medium text-gray-700 hover:text-gray-900">
               Instaladores
+            </Link>
+            <Link href="#preguntas" className="text-sm font-medium text-gray-700 hover:text-gray-900">
+              Preguntas
             </Link>
           </div>
 

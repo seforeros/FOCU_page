@@ -91,13 +91,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#preguntas" className="hover:text-white transition-colors">
-                  Preguntas frecuentes
+                <Link href="#instaladores" className="hover:text-white transition-colors">
+                  Para instaladores
                 </Link>
               </li>
               <li>
-                <Link href="#instaladores" className="hover:text-white transition-colors">
-                  Para instaladores
+                <Link href="#preguntas" className="hover:text-white transition-colors">
+                  Preguntas frecuentes
                 </Link>
               </li>
             </ul>
