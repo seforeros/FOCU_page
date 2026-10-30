@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { FileText, Lightbulb, Users, Sun } from 'lucide-react'
 
 const steps = [
@@ -63,18 +62,11 @@ export function HowItWorks() {
         </div>
 
         <div className="bg-white rounded-2xl p-8 border border-gray-200">
-          <p className="text-gray-700 mb-6 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed">
             <strong className="text-gray-900">Un sistema solar dura entre 20 y 25 años.</strong> Por eso no basta con
             instalarlo: te acompañamos para que el instalador que elijas entregue un sistema con garantías y que rinda
             lo que prometió.
           </p>
-          <a
-            href="https://studio.seosenergy.co/solar-simulator?customerId=765e6908-a1e9-4c59-9a65-8b79523fd8cd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white">Calcula tu ahorro →</Button>
-          </a>
         </div>
       </div>
     </section>
