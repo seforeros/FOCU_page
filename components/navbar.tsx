@@ -26,16 +26,15 @@ export function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="relative h-10 w-10">
-              <Image
-                src="/images/logo2.png"
-                alt="FOCU Energía Logo"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <span className="text-xl font-bold text-gray-900">FOCU Energía SAS</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo-sol-by-focu.png"
+              alt="SOL by FOCU"
+              width={758}
+              height={330}
+              priority
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -31,16 +31,14 @@ export function Footer() {
         <div className="grid gap-8 lg:grid-cols-4">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="relative h-10 w-10">
-                <Image
-                  src="/images/logo2.png"
-                  alt="FOCU Energía Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-xl font-bold">FOCU Energía SAS</span>
+            <div className="flex items-center mb-4">
+              <Image
+                src="/images/logo-sol-by-focu-blanco.png"
+                alt="SOL by FOCU"
+                width={758}
+                height={330}
+                className="h-14 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-6 text-sm leading-relaxed">
               Energía limpia, asequible y digital para Colombia. Diseñamos e instalamos sistemas solares que transforman
@@ -120,7 +118,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>© 2025 FOCU Energía. Todos los derechos reservados.</p>
+          <p>© 2025 SOL by FOCU. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">
               Política de datos

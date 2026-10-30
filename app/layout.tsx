@@ -8,13 +8,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "FOCU Energía - Sistemas Solares en Colombia",
+  title: "SOL by FOCU - Sistemas Solares en Colombia",
   description:
     "Diseñamos, instalamos y financiamos proyectos solares residenciales, comerciales e industriales en toda Colombia. Ahorra en tu factura de energía con sistemas solares a la medida.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.svg",
-    apple: "/images/logo-focu-2-20-281-29.png",
+    icon: "/images/logo-sol-icono.png",
+    apple: "/images/logo-sol-apple.png",
   },
 }
 
