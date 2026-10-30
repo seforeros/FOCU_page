@@ -48,8 +48,11 @@ export function Navbar() {
             <Link href="#beneficios" className="text-sm font-medium text-gray-700 hover:text-gray-900">
               Beneficios
             </Link>
-            <Link href="#equipos" className="text-sm font-medium text-gray-700 hover:text-gray-900">
-              Equipos
+            <Link href="#preguntas" className="text-sm font-medium text-gray-700 hover:text-gray-900">
+              Preguntas
+            </Link>
+            <Link href="#instaladores" className="text-sm font-medium text-gray-700 hover:text-gray-900">
+              Instaladores
             </Link>
           </div>
 
@@ -61,7 +64,7 @@ export function Navbar() {
           >
             <Button className="bg-solar-yellow text-gray-900 hover:bg-solar-yellow/90 font-medium">
               <Calculator className="h-4 w-4 mr-2" />
-              Calculadora online
+              Calcula tu ahorro
             </Button>
           </a>
         </div>

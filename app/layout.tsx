@@ -7,11 +7,21 @@ import "./globals.css"
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
+const title = "SOL by FOCU · Energía solar para tu casa, sin complicaciones"
+const description =
+  "Asesoría gratis, diseño de tu sistema solar, ofertas de instaladores verificados y ayuda con la financiación. Todo en un solo lugar. Bogotá y Sabana."
+
 export const metadata: Metadata = {
-  title: "SOL by FOCU - Sistemas Solares en Colombia",
-  description:
-    "Diseñamos, instalamos y financiamos proyectos solares residenciales, comerciales e industriales en toda Colombia. Ahorra en tu factura de energía con sistemas solares a la medida.",
-  generator: "v0.app",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    locale: "es_CO",
+    siteName: "SOL by FOCU",
+    type: "website",
+    images: ["/images/hero/hero-techo-solar.jpg"],
+  },
   icons: {
     icon: "/images/logo-sol-icono.png",
     apple: "/images/logo-sol-apple.png",
