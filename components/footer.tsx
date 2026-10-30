@@ -108,7 +108,7 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Síguenos</h3>
             <div className="flex gap-3">
               <a
-                href="https://www.instagram.com/focuenergia/"
+                href="https://www.instagram.com/sol.byfocu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
@@ -117,7 +117,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://web.facebook.com/focuenergia"
+                href="https://www.facebook.com/focuenergia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
