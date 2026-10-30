@@ -6,8 +6,8 @@ import { useState } from "react"
 export function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false)
 
-  // TODO: Replace with actual WhatsApp number
-  const whatsappLink = "https://wa.me/573114721514"
+  const whatsappLink =
+    "https://wa.me/573114721514?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20energ%C3%ADa%20solar%20para%20mi%20casa"
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
