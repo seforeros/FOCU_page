@@ -1,23 +1,46 @@
 "use client"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button"
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo dura la instalación?",
+    question: "¿Cuánto me cuesta usar SOL?",
     answer:
-      "El proceso de instalación típicamente toma entre 1 y 3 días dependiendo del tamaño del sistema. Para sistemas residenciales pequeños (3-5 kWp), generalmente completamos la instalación en 1-2 días.",
+      "La asesoría, el diseño preliminar y la comparación de ofertas son gratis para ti. Solo pagas el sistema que decidas instalar, directamente con el instalador que elijas.",
   },
   {
-    question: "¿Qué pasa si un panel se daña?",
+    question: "¿Cuánto puedo ahorrar?",
     answer:
-      "Todos nuestros paneles cuentan con garantías del fabricante de hasta 25 años. En caso de daño o defecto, gestionamos directamente el reemplazo sin costo adicional para ti durante el período de garantía.",
+      "Entre 60% y 85% de tu factura, según tu consumo y tu techo. Nunca el 100%: el cargo fijo de comercialización sigue llegando. En tu diseño preliminar te mostramos la cifra para tu caso.",
+  },
+  {
+    question: "¿Quién instala los paneles?",
+    answer:
+      "El instalador que tú elijas de nuestra red. Todos pasan por una verificación: cumplimiento RETIE, experiencia comprobada, equipos Tier 1 y garantías claras. Nosotros te acompañamos de principio a fin.",
+  },
+  {
+    question: "¿Por qué debería creerle a SOL?",
+    answer:
+      "Porque no te vendemos un equipo: todos los instaladores cotizan sobre el mismo diseño y tú comparas con los mismos números.",
+  },
+  {
+    question: "¿Ofrecen financiación?",
+    answer: "Te ayudamos a encontrar opciones de financiación según tu perfil y el tamaño de tu proyecto.",
+  },
+  {
+    question: "¿Dónde están?",
+    answer:
+      "Hoy trabajamos en Bogotá y la Sabana. Si estás en otra ciudad, escríbenos y te contamos cuándo llegamos.",
+  },
+  {
+    question: "¿Cuánto tiempo dura la instalación?",
+    answer:
+      "Para una casa (3 a 5 kWp), normalmente de 1 a 2 días. Los trámites con el operador de red toman más tiempo, y te acompañamos en ellos.",
   },
   {
     question: "¿Necesito cambiar mi contador de energía?",
     answer:
-      "En la mayoría de casos, sí. Necesitarás un contador bidireccional que registre tanto la energía que consumes como la que produces. Nosotros gestionamos todo el proceso de cambio con tu empresa de energía.",
+      "En la mayoría de casos, sí. Se necesita un contador bidireccional, que mide la energía que consumes y la que entregas a la red. El instalador hace el cambio y nosotros te acompañamos en el proceso.",
   },
   {
     question: "¿Qué pasa en días nublados?",
@@ -25,24 +48,19 @@ const faqs = [
       "Los paneles solares funcionan incluso en días nublados, aunque con menor eficiencia. Tu sistema seguirá generando energía, y cuando no sea suficiente, automáticamente tomas energía de la red eléctrica.",
   },
   {
-    question: "¿Ofrecen financiación?",
-    answer:
-      "Sí, trabajamos con varias entidades financieras para ofrecer opciones de financiación flexibles. Te ayudamos a encontrar el plan que mejor se ajuste a tu presupuesto y necesidades.",
-  },
-  {
     question: "¿Puedo instalar energía solar en mi apartamento?",
     answer:
-      "Depende de varios factores como el acceso al techo del edificio y el reglamento de propiedad horizontal. Te ayudamos a evaluar la viabilidad y gestionar los permisos necesarios con tu administración.",
+      "Depende del acceso al techo del edificio y del reglamento de propiedad horizontal. Te ayudamos a evaluar si es viable.",
   },
 ]
 
 export function FAQ() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="preguntas" className="py-24 bg-gray-50">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">Preguntas frecuentes</h2>
-          <p className="text-lg text-gray-600 text-pretty">Resolvemos tus dudas sobre energía solar</p>
+          <p className="text-lg text-gray-600 text-pretty">Lo que más nos preguntan</p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -59,12 +77,6 @@ export function FAQ() {
             </AccordionItem>
           ))}
         </Accordion>
-
-        <div className="text-center mt-12">
-          <Button variant="outline" className="border-gray-300 bg-transparent">
-            Ver más preguntas →
-          </Button>
-        </div>
       </div>
     </section>
   )

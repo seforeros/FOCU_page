@@ -4,9 +4,9 @@ import { DollarSign, TrendingUp, Home, Leaf } from 'lucide-react'
 const benefits = [
   {
     icon: DollarSign,
-    title: "Ahorro en tu factura eléctrica",
+    title: "Ahorro en tu factura",
     description:
-      "Reduce tu consumo de energía de la red hasta en un 90% y protege tu bolsillo de las alzas tarifarias.",
+      "Reduce tu factura entre 60% y 85%. No llega al 100% porque el cargo fijo de comercialización no desaparece, y preferimos decírtelo desde el principio.",
   },
   {
     icon: TrendingUp,
@@ -15,8 +15,8 @@ const benefits = [
   },
   {
     icon: Home,
-    title: "Incremento del valor de tu propiedad",
-    description: "Las propiedades con sistemas solares tienen mayor valorización en el mercado inmobiliario.",
+    title: "Tu casa vale más",
+    description: "Una casa que produce su propia energía es más atractiva en el mercado.",
   },
   {
     icon: Leaf,
@@ -34,7 +34,7 @@ export function Benefits() {
             Beneficios de la energía solar
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
-            Descubre cómo un sistema solar puede transformar tu relación con la energía
+            Lo que gana tu casa cuando produces tu propia energía
           </p>
         </div>
 

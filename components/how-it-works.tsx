@@ -1,38 +1,46 @@
+import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { FileText, Lightbulb, Wrench, Award, Sun } from 'lucide-react'
+import { FileText, Lightbulb, Users, Sun } from 'lucide-react'
 
 const steps = [
   {
     number: 1,
-    title: "Diagnóstico y simulación",
-    description: "Analizamos tu consumo y simulamos tu sistema solar.",
+    title: "Cuéntanos de tu casa",
+    description: "Envíanos tu factura de energía o agenda una asesoría gratis.",
     icon: FileText,
   },
   {
     number: 2,
-    title: "Diseño y propuesta económica",
-    description: "Diseñamos la solución a la medida y te mostramos ahorros, inversión y opciones de financiación.",
+    title: "Recibe tu diseño preliminar",
+    description: "Te mostramos el tamaño de tu sistema, el ahorro estimado, la inversión y el tiempo de retorno.",
     icon: Lightbulb,
   },
   {
     number: 3,
-    title: "Instalación y legalización",
-    description: "Instalamos el sistema con personal certificado y gestionamos la conexión con la empresa de energía.",
-    icon: Wrench,
+    title: "Compara ofertas",
+    description: "Instaladores verificados cotizan sobre el mismo diseño. Tú eliges.",
+    icon: Users,
   },
   {
     number: 4,
-    title: "Certificación del sistema",
-    description: "Enviamos documentación y agendamos visita para legalización y certificación.",
-    icon: Award,
+    title: "Financia e instala",
+    description:
+      "Te ayudamos con la financiación y te acompañamos en la instalación y los trámites con el operador de red.",
+    icon: Sun,
+  },
+]
+
+const mockups = [
+  {
+    src: "/images/mockups/diseno-preliminar.jpg",
+    alt: "Ejemplo de diseño preliminar de un sistema solar",
+    caption: "Paso 2 · Tu diseño preliminar",
   },
   {
-    number: 5,
-    title: "¡Tu primer kilovatio solar!",
-    description:
-      "Monitoreamos el desempeño y ofrecemos planes de mantenimiento para toda la vida útil del sistema (20-25 años).",
-    icon: Sun,
+    src: "/images/mockups/ofertas-instaladores.jpg",
+    alt: "Ejemplo de proyectos recibiendo ofertas de instaladores",
+    caption: "Paso 3 · Ofertas de instaladores",
   },
 ]
 
@@ -45,12 +53,12 @@ export function HowItWorks() {
             Toma el control de tu energía
           </div>
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl text-balance">
-            5 pasos para instalar un sistema de energía solar en tu hogar
+            Así de fácil: 4 pasos para tener energía solar en tu casa
           </h2>
         </div>
 
         <div className="mb-12 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
-          <div className="flex gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-5 min-w-max sm:min-w-0">
+          <div className="flex gap-6 sm:grid sm:grid-cols-2 lg:grid-cols-4 min-w-max sm:min-w-0">
             {steps.map((step) => {
               const Icon = step.icon
               return (
@@ -68,13 +76,40 @@ export function HowItWorks() {
           </div>
         </div>
 
+        {/* Mockups */}
+        <div className="mb-12">
+          <div className="grid gap-6 md:grid-cols-2">
+            {mockups.map((mockup) => (
+              <figure key={mockup.src}>
+                <Image
+                  src={mockup.src}
+                  alt={mockup.alt}
+                  width={1600}
+                  height={800}
+                  className="rounded-2xl border border-gray-200 shadow-sm w-full h-auto"
+                />
+                <figcaption className="text-sm text-gray-600 mt-3">
+                  <strong className="text-gray-900">{mockup.caption}</strong>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="text-xs text-gray-500 text-center mt-6">Imágenes ilustrativas de la plataforma.</p>
+        </div>
+
         <div className="bg-white rounded-2xl p-8 border border-gray-200">
           <p className="text-gray-700 mb-6 leading-relaxed">
-            <strong className="text-gray-900">Vida útil del proyecto:</strong> Los sistemas solares tienen una vida útil
-            de 20-25 años con garantías de potencia y desempeño. Ofrecemos monitoreo continuo y planes de mantenimiento
-            para asegurar el máximo rendimiento durante toda la vida del sistema.
+            <strong className="text-gray-900">Un sistema solar dura entre 20 y 25 años.</strong> Por eso no basta con
+            instalarlo: te acompañamos para que el instalador que elijas entregue un sistema con garantías y que rinda
+            lo que prometió.
           </p>
-          <Button className="bg-gray-900 hover:bg-gray-800 text-white">Ver si tu techo es apto →</Button>
+          <a
+            href="https://studio.seosenergy.co/solar-simulator?customerId=765e6908-a1e9-4c59-9a65-8b79523fd8cd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-gray-900 hover:bg-gray-800 text-white">Calcula tu ahorro →</Button>
+          </a>
         </div>
       </div>
     </section>
