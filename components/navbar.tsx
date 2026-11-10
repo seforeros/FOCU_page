@@ -58,7 +58,7 @@ export function Navbar() {
 
           {/* Calculator Button */}
           <a
-            href="https://studio.seosenergy.co/solar-simulator?customerId=765e6908-a1e9-4c59-9a65-8b79523fd8cd"
+            href="https://sol.focuenergia.com/cotizar"
             target="_blank"
             rel="noopener noreferrer"
           >

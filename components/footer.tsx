@@ -20,7 +20,7 @@ export function Footer() {
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://calendar.app.google/o31C57dknBHuzXCK7"
+              href="https://sol.focuenergia.com/cotizar"
               target="_blank"
               rel="noopener noreferrer"
             >

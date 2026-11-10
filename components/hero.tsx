@@ -32,7 +32,7 @@ export function Hero() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://calendar.app.google/o31C57dknBHuzXCK7"
+                href="https://sol.focuenergia.com/cotizar"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -82,7 +82,7 @@ export function Hero() {
               Calcula en menos de 1 minuto tu ahorro estimado, la inversión y el tiempo de retorno.
             </p>
             <a
-              href="https://studio.seosenergy.co/solar-simulator?customerId=765e6908-a1e9-4c59-9a65-8b79523fd8cd"
+              href="https://sol.focuenergia.com/cotizar"
               target="_blank"
               rel="noopener noreferrer"
             >
